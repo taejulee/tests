@@ -7,14 +7,14 @@
     function addUnloadSyncXHR() {
         window.addEventListener('unload', function () {
             var client = new XMLHttpRequest();
-            client.open("GET", "/foo.txt", false); // third parameter indicates sync xhr
+            client.open("GET", document.getElementById("basepath").value + "/foo.txt", false); // third parameter indicates sync xhr
             client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
             client.send();
         });
     }
 </script>
 
-<label for="basepath">Default path for requests from unload:</label><input type='text' id='basepath'
+<label for="basepath">Default path for requests from unload:</label><input type="text" id="basepath"
                                                                            value="http://127.0.0.1:8000/"><br><br>
 Add unload handlers:
 <button onclick="addUnloadSyncXHR()">Sync HXR(GET foo.txt)</button>
