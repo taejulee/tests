@@ -4,12 +4,12 @@
     "use strict";
 
     window.onunload = function () {
-        console.log("addUnloadSyncXHR start!!");
+        console.log("unload start!!");
         var client = new XMLHttpRequest();
         client.open("GET", "foo.txt", false); // third parameter indicates sync xhr
         client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
         client.send();
-        console.log("addUnloadSyncXHR end!!");
+        console.log("unload end!!");
     }
 </script>
 <body>
