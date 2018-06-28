@@ -1,13 +1,5 @@
 <html>
-<script>
-    function navFrame(url) {
-        document.getElementById("frame1").src = url;
-    }
-</script>
 <body>
-<iframe id="frame1"></iframe>
-<button onclick="navFrame('https://csreis.github.io')">Go main page</button>
-<br>
 <script>
     function addUnloadBeacon() {
         window.addEventListener('unload', function () {
@@ -21,12 +13,5 @@ Add unload handlers:
 <button onclick="addUnloadBeacon()">sendBeacon</button>
 <br clear=all><br>
 
-<script>
-    window.onload = function () {
-        var frame = document.getElementById('frame1');
-        // will become an OOPIF
-        frame.src = location.href;
-    }
-</script>
 </body>
 </html>
