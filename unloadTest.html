@@ -3,7 +3,7 @@
 <script>
     function addUnloadBeacon() {
         window.addEventListener('unload', function () {
-            navigator.sendBeacon(document.getElementById("basepath").value + "/foo", "bar");
+            navigator.sendBeacon(document.getElementById("basepath").value + "/foo");
         });
     }
 </script>
