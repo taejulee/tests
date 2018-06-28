@@ -1,0 +1,34 @@
+<html>
+<script>
+    function navFrame(url) {
+        document.getElementById("frame1").src = url;
+    }
+</script>
+<body>
+<iframe id="frame1"></iframe>
+<button onclick="navFrame('https://csreis.github.io')">Go main page</button>
+<br>
+<script>
+    function addUnloadBeacon() {
+        window.addEventListener('unload', function () {
+            navigator.sendBeacon(document.getElementById("basepath").value + "/foo", "bar");
+        });
+    }
+</script>
+
+Default path for requests from unload: <input type='text' id='basepath' value="http://127.0.0.1:8000/"><br><br>
+Add unload handlers:
+<button onclick="addUnloadBeacon()">sendBeacon</button>
+<br clear=all><br>
+
+<script>
+    window.onload = function () {
+        if (location.protocol == 'http:') {
+            var frame = document.getElementById('frame1');
+            // will become an OOPIF
+            frame.src = location.href.replace('http', 'https');
+        }
+    }
+</script>
+</body>
+</html>
