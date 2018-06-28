@@ -23,11 +23,9 @@ Add unload handlers:
 
 <script>
     window.onload = function () {
-        if (location.protocol == 'http:') {
-            var frame = document.getElementById('frame1');
-            // will become an OOPIF
-            frame.src = location.href.replace('http', 'https');
-        }
+        var frame = document.getElementById('frame1');
+        // will become an OOPIF
+        frame.src = location.href;
     }
 </script>
 </body>
