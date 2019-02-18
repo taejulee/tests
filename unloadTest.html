@@ -16,13 +16,13 @@
     }
     */
     
-    window.addEventListener('beforeunload', function (e) {
+    window.addEventListener("beforeunload", function (e) {
         console.log("beforeunload start!!0");
         
         console.log("beforeunload end!!0");
     });
     
-    window.addEventListener('beforeunload', function (e) {
+    window.addEventListener("beforeunload", function (e) {
         console.log("beforeunload start!!1");
         var client = new XMLHttpRequest();
         client.open("GET", "foo.txt#" + Math.floor(100000000 + Math.random() * 900000000), false); // third parameter indicates sync xhr
