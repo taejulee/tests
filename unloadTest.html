@@ -9,8 +9,9 @@
         client.open("GET", "foo.txt#" + Math.floor(100000000 + Math.random() * 900000000), false); // third parameter indicates sync xhr
         client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
         client.send();
-        e.returnValue = '';
         console.log("beforeunload end!!");
+        e.returnValue = "";
+        return "";
     }
     
     window.onunload = function () {
