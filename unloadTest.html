@@ -3,12 +3,13 @@
 <script type="text/javascript">
     "use strict";
     
-    window.onbeforeunload = function () {
+    window.onbeforeunload = function (e) {
         console.log("beforeunload start!!");
         var client = new XMLHttpRequest();
         client.open("GET", "foo.txt#" + Math.floor(100000000 + Math.random() * 900000000), false); // third parameter indicates sync xhr
         client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
         client.send();
+        e.returnValue = '';
         console.log("beforeunload end!!");
     }
     
