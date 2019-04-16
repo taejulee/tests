@@ -36,7 +36,7 @@
         return confirmationMessage;
     });
    
-    
+    /*
     window.onunload = function () {
         console.log("unload start!!");
         var client = new XMLHttpRequest();
@@ -45,6 +45,12 @@
         client.send();
         console.log("unload end!!");
     }
+    */
+    
+    window.addEventListener("unload", function (e) {
+        console.log("unload start!!");
+        console.log("unload end!!");
+    });
 </script>
 <body>
 <h1>This page requests the foo.txt file when unload event occurs.</h1>
