@@ -2,7 +2,7 @@
 <html>
 <script type="text/javascript">
     "use strict";
-    
+    /*
     window.onbeforeunload = function (e) {
         console.log("beforeunload start!!");
 //         var client = new XMLHttpRequest();
@@ -13,8 +13,8 @@
         e.returnValue = "";
         return "";
     }
+    */
     
-    /*
     window.addEventListener("beforeunload", function (e) {
         console.log("beforeunload start!!0");
         
@@ -23,15 +23,19 @@
     
     window.addEventListener("beforeunload", function (e) {
         console.log("beforeunload start!!1");
-        var client = new XMLHttpRequest();
-        client.open("GET", "foo.txt#" + Math.floor(100000000 + Math.random() * 900000000), false); // third parameter indicates sync xhr
-        client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
-        client.send();
+//         var client = new XMLHttpRequest();
+//         client.open("GET", "foo.txt#" + Math.floor(100000000 + Math.random() * 900000000), false); // third parameter indicates sync xhr
+//         client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+//         client.send();
         console.log("beforeunload end!!1");
-        e.returnValue = "";
-        return "";
+//         e.returnValue = "";
+//         return "";
+        var confirmationMessage = "\o/";
+
+        (e || window.event).returnValue = confirmationMessage;
+        return confirmationMessage;
     });
-    */
+   
     
     window.onunload = function () {
         console.log("unload start!!");
