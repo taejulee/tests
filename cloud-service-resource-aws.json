@@ -1,0 +1,142 @@
+{
+  "result": [
+    {
+      "chartOption": {
+        "id": "awsstatus",
+        "valueField": "cnt",
+        "titleField": "value",
+        "colorField": "color",
+        "labelField": "",
+        "labelValue": "28",
+        "labelUnit": "instances",
+        "labelColorField": "",
+        "totalInstance": "",
+        "chartLabel": "status"
+      },
+      "chartData": [
+        {
+          "section": "status",
+          "cnt": "21",
+          "value": "running"
+        },
+        {
+          "section": "status",
+          "cnt": "4",
+          "value": "stopped"
+        },
+        {
+          "section": "status",
+          "cnt": "3",
+          "value": "terminated"
+        }
+      ],
+      "chartCntData": null
+    },
+    {
+      "chartOption": {
+        "id": "awsregion",
+        "valueField": "cnt",
+        "titleField": "value",
+        "colorField": "color",
+        "labelField": "",
+        "labelValue": "2",
+        "labelUnit": "regions",
+        "labelColorField": "",
+        "totalInstance": "28",
+        "chartLabel": "regions"
+      },
+      "chartData": [
+        {
+          "section": "region",
+          "cnt": "25",
+          "value": "Asia Pacific (Seoul)"
+        },
+        {
+          "section": "region",
+          "cnt": "3",
+          "value": "Middle East (UAE)"
+        }
+      ],
+      "chartCntData": null
+    },
+    {
+      "chartOption": {
+        "id": "awstype",
+        "valueField": "cnt",
+        "titleField": "value",
+        "colorField": "color",
+        "labelField": "",
+        "labelValue": "12",
+        "labelUnit": "types",
+        "labelColorField": "",
+        "totalInstance": "",
+        "chartLabel": "types"
+      },
+      "chartData": [
+        {
+          "section": "type",
+          "cnt": "7",
+          "value": "m5.large"
+        },
+        {
+          "section": "type",
+          "cnt": "5",
+          "value": "t3.micro"
+        },
+        {
+          "section": "type",
+          "cnt": "3",
+          "value": "t3.small"
+        },
+        {
+          "section": "type",
+          "cnt": "3",
+          "value": "m5a.xlarge"
+        },
+        {
+          "section": "type",
+          "cnt": "2",
+          "value": "r6i.xlarge"
+        },
+        {
+          "section": "type",
+          "cnt": "2",
+          "value": "c4.4xlarge"
+        },
+        {
+          "section": "type",
+          "cnt": "1",
+          "value": "t3a.xlarge"
+        },
+        {
+          "section": "type",
+          "cnt": "1",
+          "value": "t3.medium"
+        },
+        {
+          "section": "type",
+          "cnt": "1",
+          "value": "t3.2xlarge"
+        },
+        {
+          "section": "type",
+          "cnt": "1",
+          "value": "c5.xlarge"
+        },
+        {
+          "section": "type",
+          "cnt": "1",
+          "value": "c6i.2xlarge"
+        },
+        {
+          "section": "type",
+          "cnt": "1",
+          "value": "t3.xlarge"
+        }
+      ],
+      "chartCntData": null
+    }
+  ],
+  "rsrcType": "ec2",
+  "status": "ok"
+}

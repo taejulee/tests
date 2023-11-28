@@ -1,0 +1,97 @@
+{
+  "result": [
+    {
+      "chartOption": {
+        "id": "azustatus",
+        "valueField": "cnt",
+        "titleField": "value",
+        "colorField": "color",
+        "labelField": "",
+        "labelValue": "13",
+        "labelUnit": "instances",
+        "labelColorField": "",
+        "totalInstance": "",
+        "chartLabel": "status"
+      },
+      "chartData": [
+        {
+          "section": "status",
+          "cnt": "9",
+          "value": "running"
+        },
+        {
+          "section": "status",
+          "cnt": "4",
+          "value": "deallocated"
+        }
+      ],
+      "chartCntData": null
+    },
+    {
+      "chartOption": {
+        "id": "azuregion",
+        "valueField": "cnt",
+        "titleField": "value",
+        "colorField": "color",
+        "labelField": "",
+        "labelValue": "2",
+        "labelUnit": "regions",
+        "labelColorField": "",
+        "totalInstance": "13",
+        "chartLabel": "regions"
+      },
+      "chartData": [
+        {
+          "section": "region",
+          "cnt": "12",
+          "value": "Korea Central"
+        },
+        {
+          "section": "region",
+          "cnt": "1",
+          "value": "East US"
+        }
+      ],
+      "chartCntData": null
+    },
+    {
+      "chartOption": {
+        "id": "azutype",
+        "valueField": "cnt",
+        "titleField": "value",
+        "colorField": "color",
+        "labelField": "",
+        "labelValue": "4",
+        "labelUnit": "types",
+        "labelColorField": "",
+        "totalInstance": "",
+        "chartLabel": "types"
+      },
+      "chartData": [
+        {
+          "section": "type",
+          "cnt": "6",
+          "value": "Standard_B1s"
+        },
+        {
+          "section": "type",
+          "cnt": "3",
+          "value": "Standard_A4_v2"
+        },
+        {
+          "section": "type",
+          "cnt": "3",
+          "value": "Standard_D2s_v3"
+        },
+        {
+          "section": "type",
+          "cnt": "1",
+          "value": "Standard_B1ls"
+        }
+      ],
+      "chartCntData": null
+    }
+  ],
+  "rsrcType": "Microsoft.Compute/virtualMachines",
+  "status": "ok"
+}

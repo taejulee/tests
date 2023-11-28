@@ -1,0 +1,102 @@
+{
+  "result": [
+    {
+      "chartOption": {
+        "id": "gcpstatus",
+        "valueField": "cnt",
+        "titleField": "value",
+        "colorField": "color",
+        "labelField": "",
+        "labelValue": "8",
+        "labelUnit": "instances",
+        "labelColorField": "",
+        "totalInstance": "",
+        "chartLabel": "status"
+      },
+      "chartData": [
+        {
+          "section": "status",
+          "cnt": "2",
+          "value": "RUNNING"
+        },
+        {
+          "section": "status",
+          "cnt": "6",
+          "value": "TERMINATED"
+        }
+      ],
+      "chartCntData": null
+    },
+    {
+      "chartOption": {
+        "id": "gcpregion",
+        "valueField": "cnt",
+        "titleField": "value",
+        "colorField": "color",
+        "labelField": "",
+        "labelValue": "2",
+        "labelUnit": "regions",
+        "labelColorField": "",
+        "totalInstance": "8",
+        "chartLabel": "regions"
+      },
+      "chartData": [
+        {
+          "section": "region",
+          "cnt": "2",
+          "value": "Council Bluffs"
+        },
+        {
+          "section": "region",
+          "cnt": "6",
+          "value": "Seoul"
+        }
+      ],
+      "chartCntData": null
+    },
+    {
+      "chartOption": {
+        "id": "gcptype",
+        "valueField": "cnt",
+        "titleField": "value",
+        "colorField": "color",
+        "labelField": "",
+        "labelValue": "5",
+        "labelUnit": "types",
+        "labelColorField": "",
+        "totalInstance": "",
+        "chartLabel": "types"
+      },
+      "chartData": [
+        {
+          "section": "type",
+          "cnt": "1",
+          "value": "e2-highcpu-2"
+        },
+        {
+          "section": "type",
+          "cnt": "1",
+          "value": "e2-medium"
+        },
+        {
+          "section": "type",
+          "cnt": "3",
+          "value": "e2-micro"
+        },
+        {
+          "section": "type",
+          "cnt": "2",
+          "value": "e2-standard-4"
+        },
+        {
+          "section": "type",
+          "cnt": "1",
+          "value": "f1-micro"
+        }
+      ],
+      "chartCntData": null
+    }
+  ],
+  "rsrcType": "compute#instance",
+  "status": "ok"
+}
